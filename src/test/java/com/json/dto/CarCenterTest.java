@@ -16,7 +16,7 @@ public class CarCenterTest {
         cars.add(kia);
         cars.add(bmw);
 
-        CarCenter carCenter = new CarCenter(LocalDate.now(), cars);
+        CarCenter carCenter = new CarCenter(LocalDate.now().toString(), cars);
 
         System.out.println("date : " + carCenter.getLocalDate());
         carCenter.getCars().forEach(c -> {

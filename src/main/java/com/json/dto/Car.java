@@ -30,4 +30,12 @@ public class Car implements Serializable {
     public void setType(String type) {
         this.type = type;
     }
+
+    @Override
+    public String toString() {
+        return "Car{" +
+                "color='" + color + '\'' +
+                ", type='" + type + '\'' +
+                '}';
+    }
 }
